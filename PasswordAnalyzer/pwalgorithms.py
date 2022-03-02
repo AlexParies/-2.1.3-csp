@@ -23,10 +23,10 @@ def get_dictionary():
 
 def twoWord(password):
     words = get_dictionary()
-    guess = 0
+    guesses = 0
     for w in words:
         for x in words:
-            guess +=1
+            guesses +=1
             if(w+x == password):
                 return True, guesses
-        return False, guesses
+    return False, guesses
