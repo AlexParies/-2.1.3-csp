@@ -38,7 +38,7 @@ def twoWordDigit(password):
   # get each word from the dictionary file
   for w1 in words:
     for w2 in words:
-      for num in range(0,100):
+      for num in range(0,5):
         guesses += 1
         print(guesses)
         if (str(num) + w1 + w2 == password):
