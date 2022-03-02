@@ -40,7 +40,6 @@ def twoWordDigit(password):
     for w2 in words:
       for num in range(0,5):
         guesses += 1
-        
         if (str(num) + w1 + w2 == password):
           return True, guesses
         if (w1 + w2 + str(num) == password):
