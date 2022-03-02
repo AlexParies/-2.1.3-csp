@@ -4,11 +4,11 @@ import pwalgorithms as pwa
 
 password = input("Enter password:")
 
-print("Analyzing a two-word password ...")
+print("Analyzing a two-word digit password password ...")
 time_start = time.time()
 
 # attempt to find password
-found, num_guesses = pwa.twoWord(password)
+found, num_guesses = pwa.twoWordDigit(password)
 time_end = time.time()
 
 # report results

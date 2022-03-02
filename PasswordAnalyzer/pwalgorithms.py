@@ -30,3 +30,21 @@ def twoWord(password):
             if(w+x == password):
                 return True, guesses
     return False, guesses
+
+
+def twoWordDigit(password):
+  words = get_dictionary()
+  guesses = 0
+  # get each word from the dictionary file
+  for w1 in words:
+    for w2 in words:
+      for num in range(0,100):
+        guesses += 1
+        print(guesses)
+        if (str(num) + w1 + w2 == password):
+          return True, guesses
+        if (w1 + w2 + str(num) == password):
+          return True, guesses
+        if (w1 + str(num) + w2 == password):
+          return True, guesses
+  return False, guesses
