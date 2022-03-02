@@ -14,6 +14,6 @@ time_end = time.time()
 # report results
 if (found):
   print(password, "found in", num_guesses, "guesses")
-else: 
+else:
   print(password, "NOT found in", num_guesses, "guesses!")
 print("Time:", format((time_end-time_start), ".8f"))
