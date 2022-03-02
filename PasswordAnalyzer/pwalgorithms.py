@@ -47,4 +47,5 @@ def twoWordDigit(password):
           return True, guesses
         if (w1 + str(num) + w2 == password):
           return True, guesses
+        print(password)
   return False, guesses
