@@ -42,10 +42,16 @@ def twoWordDigit(password):
         guesses += 1
         print(guesses)
         if (str(num) + w1 + w2 == password):
+
+          print(password)
           return True, guesses
         if (w1 + w2 + str(num) == password):
+
+          print(password)
           return True, guesses
         if (w1 + str(num) + w2 == password):
+
+          print(password)
           return True, guesses
-        print(password)
+
   return False, guesses
